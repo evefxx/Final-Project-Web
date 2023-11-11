@@ -19,3 +19,4 @@ const Categories = ({ allCategories, filterItems }) => {
 };
 
 export default Categories;
+

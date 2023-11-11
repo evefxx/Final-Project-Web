@@ -33,6 +33,7 @@ const filterItems = (category) =>{
           </div>
           <Categories allCategories={allCategories} filterItems={filterItems}/>
           <Menu items={menuItem} />
+          <MyButton/>
           
         </section>
       </main>
@@ -43,3 +44,7 @@ const filterItems = (category) =>{
 
 export default App
 
+function MyButton() {
+  return 
+  return <button>USE</button>
+}

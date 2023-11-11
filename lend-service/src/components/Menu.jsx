@@ -5,7 +5,7 @@ const Menu = ({items}) => {
         <div className='section-center'>
             {
                 items.map((menuItem)=>{
-                    const {id, title, img, status} = menuItem;
+                    const {id, title, count, img, status} = menuItem;
                     return(
                         <article key={id} className='menu-item'>
                             <img src={img} alt={title} className='photo' />
@@ -13,7 +13,9 @@ const Menu = ({items}) => {
                                 <header>
                                     <h4>{title}</h4>
                                 </header>
+                                <h10 className="count">{count}</h10>
                                 <p className='item-text'>{status}</p>
+                                <MyButton/>
                             </div>                       
                         </article>
 
@@ -26,8 +28,9 @@ const Menu = ({items}) => {
     )
 }
 
+
 export default Menu
 
 function MyButton() {
-    return <button>This is my button component</button>
+    return <button>Lend</button>
   }
